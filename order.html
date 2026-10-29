@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Place an Order | Little Thyme House</title>
+
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <section id="navBar">
+                <img src="favicon.png"
+                     alt="Little Thyme House logo"
+                     id="navImage">
+
+                <h1>Little Thyme House</h1>
+
+                <a href="index.html" id="aboutUs">About Us</a>
+                <a href="order.html" id="order">Order</a>
+            </section>
+        </nav>
+    </header>
+
+    <main class="orderPage">
+
+        <h2>Our Menu</h2>
+
+        <section class="mainPage">
+
+            <div class="menueItems">
+
+                <form id="orderForm">
+
+                    <!-- APPETIZERS -->
+                    <section class="appi">
+                        <h3>Appetizers</h3>
+
+                        <div class="menueItems" data-name="Golden Arancini">
+                            <h4>Golden Arancini — $12.99</h4>
+
+                            <p>Crispy risotto bites, parmesan, roasted garlic aioli.</p>
+
+                            <div class="menueImages">
+                                <label for="aranciniQty">Qty:</label>
+
+                                <input type="number"
+                                       id="aranciniQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="12.99"
+                                       required>
+
+                                <img src="goldenarsini.png"
+                                     alt="Golden Arancini">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- MAINS -->
+                    <section class="mains">
+                        <h3>Mains</h3>
+
+                        <div class="menueItems" data-name="Butter Chicken Pasta">
+                            <h4>Butter Chicken Pasta — $22.99</h4>
+
+                            <p>Creamy spiced tomato sauce, tender chicken, parmesan and fresh herbs.</p>
+
+                            <div class="menueImages">
+                                <label for="pastaQty">Qty:</label>
+
+                                <input type="number"
+                                       id="pastaQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="22.99"
+                                       required>
+
+                                <img src="pasta.png"
+                                     alt="Butter Chicken Pasta">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Wild Mushroom Risotto">
+                            <h4>Wild Mushroom Risotto — $20.99</h4>
+
+                            <p>Creamy arborio rice, wild mushrooms, parmesan and thyme.</p>
+
+                            <div class="menueImages">
+                                <label for="risottoQty">Qty:</label>
+
+                                <input type="number"
+                                       id="risottoQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="20.99"
+                                       required>
+
+                                <img src="mushroomrissoto.png"
+                                     alt="Wild Mushroom Risotto">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Maple Miso Salmon Bowl">
+                            <h4>Maple Miso Salmon Bowl — $24.99</h4>
+
+                            <p>Glazed salmon, jasmine rice, crisp greens and sesame dressing.</p>
+
+                            <div class="menueImages">
+                                <label for="bowlQty">Qty:</label>
+
+                                <input type="number"
+                                       id="bowlQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="24.99"
+                                       required>
+
+                                <img src="salmon.png"
+                                     alt="Maple Miso Salmon Bowl">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DESSERTS -->
+                    <section class="sweets">
+                        <h3>Something Sweet</h3>
+
+                        <div class="menueItems" data-name="Midnight Chocolate Fondant">
+                            <h4>Midnight Chocolate Fondant — $10.99</h4>
+
+                            <p>Warm molten chocolate cake with vanilla bean ice cream.</p>
+
+                            <div class="menueImages">
+                                <label for="cakeQty">Qty:</label>
+
+                                <input type="number"
+                                       id="cakeQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="10.99"
+                                       required>
+
+                                <img src="chocolatedessert.png"
+                                     alt="Midnight Chocolate Fondant">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Little Lemon Tart">
+                            <h4>Little Lemon Tart — $9.99</h4>
+
+                            <p>Lemon curd, buttery pastry and toasted meringue.</p>
+
+                            <div class="menueImages">
+                                <label for="tartQty">Qty:</label>
+
+                                <input type="number"
+                                       id="tartQty"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="9.99"
+                                       required>
+
+                                <img src="lemontart.png"
+                                     alt="Little Lemon Tart">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- DRINKS -->
+                    <section class="drinks">
+                        <h3>Sip &amp; Savour</h3>
+
+                        <div class="menueItems" data-name="Rosemary Lemonade">
+                            <h4>Rosemary Lemonade — $6.99</h4>
+
+                            <div class="menueImages">
+                                <label for="drinkLemonade">Qty:</label>
+
+                                <input type="number"
+                                       id="drinkLemonade"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="6.99"
+                                       required>
+
+                                <img src="lemonade.png"
+                                     alt="Rosemary Lemonade">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Iced Peach Green Tea">
+                            <h4>Iced Peach Green Tea — $5.99</h4>
+
+                            <div class="menueImages">
+                                <label for="drinkTea">Qty:</label>
+
+                                <input type="number"
+                                       id="drinkTea"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="5.99"
+                                       required>
+
+                                <img src="icedtea.png"
+                                     alt="Iced Peach Green Tea">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Classic Cappuccino">
+                            <h4>Classic Cappuccino — $5.99</h4>
+
+                            <div class="menueImages">
+                                <label for="drinkCoffee">Qty:</label>
+
+                                <input type="number"
+                                       id="drinkCoffee"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="5.99"
+                                       required>
+
+                                <img src="coffe.png"
+                                     alt="Classic Cappuccino">
+                            </div>
+                        </div>
+
+                        <div class="menueItems" data-name="Vanilla Bean Milkshake">
+                            <h4>Vanilla Bean Milkshake — $7.99</h4>
+
+                            <div class="menueImages">
+                                <label for="drinkMilkshake">Qty:</label>
+
+                                <input type="number"
+                                       id="drinkMilkshake"
+                                       min="0"
+                                       max="20"
+                                       step="1"
+                                       value="0"
+                                       data-price="7.99"
+                                       required>
+
+                                <img src="milkshake.png"
+                                     alt="Vanilla Bean Milkshake">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- SUBMIT AND RECEIPT -->
+                    <button type="submit">Generate Receipt</button>
+
+                    <section id="receipt" aria-live="polite"></section>
+
+                </form>
+            </div>
+            
+
+            <!-- CART -->
+            <aside class="cart">
+                <h2>Your Cart</h2>
+
+                <p>
+                    Subtotal:
+                    <span class="liveTotal">$0.00</span>
+                </p>
+
+                <p>GST: 5%</p>
+                <p>Your final total will appear on your receipt.</p>
+            </aside>
+
+        </section>
+    </main>
+
+        <footer>
+        
+            <div id="copyright">
+                © 2026 Pallavi Sanwal
+            </div>
+            <div id="weatherForecast">
+
+                <p> Calgary,Alberta</p>
+                <p id="temp">..temp</p>
+                <p id="weather">..weather</p>
+                <p id="time"></p>
+             
+            </div>
+            <div id="profile">
+              <a href="https://www.linkedin.com/in/pallavi-sanwal-133840439/" target="_blank">Linkdin Profile</a>
+              <a href="https://github.com/PallaviSanwal99" target="_blank"> Github Profile</a>
+                
+            </div>
+        
+    </footer>
+    </footer>
+
+</body>
+</html>
